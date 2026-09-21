@@ -1,1 +1,50 @@
 /* Your SCSS here. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    position: relative;
+    height: 300vh;
+}
+
+.nav-bar {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: rgb(44, 22, 65);
+    display: flex;
+    justify-content: flex-end;
+    height: 70px;
+    transition: 0.5s ease-in-out;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-bar-contents a {
+    float: inline-start;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 26px;
+    transition: 0.5s ease-in-out;
+}
+
+.nav-bar a:hover {
+    background-color: rgb(140, 99, 179);
+}
+
+.scrolled {
+    height: 50px;
+    font-size: 16px;
+    transition: 0.5s ease-in-out;
+}
+
+.scrolled .nav-bar-contents a {
+    transition: 0.5s ease-in-out;
+    font-size: 16px;
+}
