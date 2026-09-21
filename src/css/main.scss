@@ -16,11 +16,20 @@
     overflow: hidden;
     background-color: rgb(44, 22, 65);
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     height: 70px;
     transition: 0.5s ease-in-out;
     align-items: center;
     padding: 10px;
+}
+
+.nav-bar .nav-bar-title {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 36px;
+    transition: 0.5s ease-in-out;
 }
 
 .nav-bar-contents a {
@@ -47,4 +56,9 @@
 .scrolled .nav-bar-contents a {
     transition: 0.5s ease-in-out;
     font-size: 16px;
+}
+
+.scrolled .nav-bar-title {
+    transition: 0.5s ease-in-out;
+    font-size: 26px;
 }
