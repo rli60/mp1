@@ -2,12 +2,43 @@
 const header = document.querySelector('.nav-bar');
 
 window.addEventListener("scroll", () => {
-    if (window.scrollY >= 50) {
-        header.classList.add("scrolled")
-    }
-    else {
-        header.classList.remove("scrolled") 
-    }
+  if (window.scrollY >= 50) {
+    header.classList.add("scrolled")
+  }
+  else {
+    header.classList.remove("scrolled") 
+  }
+})
+
+const about = document.querySelector('.nav-bar-contents a[href="#about"]')
+const projects = document.querySelector('.nav-bar-contents a[href="#projects"]')
+const experience = document.querySelector('.nav-bar-contents a[href="#experience"]')
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY >= 290 && window.scrollY <= 700) {
+    about.classList.add("hovered")
+  }
+  else {
+    about.classList.remove("hovered")
+  }
+})
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 700 && window.scrollY <= 1500) {
+    projects.classList.add("hovered")
+  }
+  else {
+    projects.classList.remove("hovered")
+  }
+})
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 1500) {
+    experience.classList.add("hovered")
+  }
+  else {
+    experience.classList.remove("hovered")
+  }
 })
 
 var modal1 = document.getElementById("myModal1");

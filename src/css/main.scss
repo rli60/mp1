@@ -61,6 +61,10 @@ html {
                 padding 0.5s ease-in-out;
 }
 
+.hovered {
+    background-color: rgb(140, 99, 179);
+}
+
 .nav-bar a:hover {
     background-color: rgb(140, 99, 179);
 }
@@ -306,6 +310,10 @@ html {
     width: 30%;
 }
 
+#experience b {
+    font-size: 30px;
+}
+
 #experience p {
     font-size: 20px;
 }
@@ -373,12 +381,9 @@ footer {
     text-align: center;
     padding: 10px;
     display: flex;
-    flex-direction: column;
-    font-size: 20px;
-}
-
-footer .content {
-    padding: 10px;
+    font-size: 15px;
+    justify-content: center;
+    gap: 50px;
 }
 
 footer img {
@@ -386,5 +391,9 @@ footer img {
     height: 50px;
     clip-path: circle(50%);
     margin-top: 10px;
+}
+
+footer p {
+    margin-top: 8px;
 }
 
